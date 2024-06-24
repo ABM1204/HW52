@@ -2,22 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>index</title>
+    <title>Task List</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Task list</h1>
-    <ul>
-        {% for task in tasks %}
-        <li>
-            Description: {{ task.description }} <br>
-            Status: {{ task.status }} <br>
-            Date of finish: {% if task.due_date %}
-                untill {{ task.due_date }} <br>
-            {% endif %}
-            <a href="{% url 'delete_task' task.id %}">Delete</a>
-        </li>
-        {% endfor %}
-    </ul>
-    <a href="{% url 'add_task' %}">Add task</a>
+    <div class="container">
+        <h1 class="my-4">Task List</h1>
+        <ul class="list-group">
+            {% for task in tasks %}
+            <li class="list-group-item">
+                <strong>Description:</strong> {{ task.description }}<br>
+                <strong>Status:</strong> {{ task.status }}<br>
+                <strong>Date of finish:</strong> {% if task.due_date %}
+                    until {{ task.due_date }}<br>
+                {% endif %}
+                <a href="{% url 'delete_task' task.id %}" class="btn btn-danger btn-sm mt-2">Delete</a>
+            </li>
+            {% endfor %}
+        </ul>
+        <a href="{% url 'add_task' %}" class="btn btn-primary mt-4">Add Task</a>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
