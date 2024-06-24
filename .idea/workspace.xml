@@ -1,27 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="73f6f2fd-8689-43ba-8f0d-0835b50f4ebd" name="Changes" comment="" />
+    <list default="true" id="73f6f2fd-8689-43ba-8f0d-0835b50f4ebd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/source/to_do_list/templates/delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/HW52/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/HW52/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/HW52/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/HW52/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/source/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/to_do_list/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/to_do_list/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/to_do_list/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/to_do_list/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/to_do_list/templates/add_task.html" beforeDir="false" afterPath="$PROJECT_DIR$/source/to_do_list/templates/add_task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/to_do_list/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/source/to_do_list/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/to_do_list/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/to_do_list/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "customColor": "",
   "associatedIndex": 8
 }]]></component>
   <component name="ProjectId" id="2iK9VMLVokyMsyMxlgbqeoNdhSP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Django Server.main.executor": "Run",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
+    "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
+    "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/User/Desktop/Python 19/HW52/source/HW52/settings.py",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "com.intellij.python.django.customization.DjangoModulesConfigurable",
     "vue.rearranger.settings.migration": "true"
@@ -71,7 +107,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1719228423299</updated>
-      <workItem from="1719228424453" duration="130000" />
+      <workItem from="1719228424453" duration="3623000" />
     </task>
     <servers />
   </component>

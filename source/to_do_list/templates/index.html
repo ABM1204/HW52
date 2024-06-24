@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>index</title>
 </head>
 <body>
-
+    <h1>Task list</h1>
+    <ul>
+        {% for task in tasks %}
+        <li>
+            Description: {{ task.description }} <br>
+            Status: {{ task.status }} <br>
+            Date of finish: {% if task.due_date %}
+                untill {{ task.due_date }} <br>
+            {% endif %}
+            <a href="{% url 'delete_task' task.id %}">Delete</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'add_task' %}">Add task</a>
 </body>
 </html>
