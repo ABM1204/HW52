@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponseBadRequest, HttpResponseNotFound
 from .models import Task
 
@@ -10,16 +10,15 @@ def task_list(request):
 def add_task(request):
     if request.method == 'POST':
         description = request.POST.get('description')
+        details = request.POST.get('details')
         status = request.POST.get('status')
         due_date = request.POST.get('due_date')
-
 
         if not description:
             return HttpResponseBadRequest('<h1>ERROR: Description is required</h1>')
 
         if status not in ['new', 'in_progress', 'done']:
             return HttpResponseBadRequest('<h1>ERROR: Invalid status</h1>')
-
 
         from datetime import datetime
         if due_date:
@@ -30,11 +29,12 @@ def add_task(request):
             except ValueError:
                 return HttpResponseBadRequest('<h1>ERROR: Invalid date format</h1>')
 
-        task = Task(description=description, status=status, due_date=due_date)
+        task = Task(description=description, details=details, status=status, due_date=due_date)
         task.save()
         return redirect('task_list')
 
     return render(request, 'add_task.html')
+
 
 
 def delete_task(request, task_id):
@@ -48,3 +48,7 @@ def delete_task(request, task_id):
         return redirect('task_list')
 
     return render(request, 'delete.html', {'task': task})
+
+def task_detail(request, task_id):
+    task = get_object_or_404(Task, pk=task_id)
+    return render(request, 'task_detail.html', {'task': task})
