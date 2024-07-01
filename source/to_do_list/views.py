@@ -6,7 +6,6 @@ def task_list(request):
     tasks = Task.objects.all()
     return render(request, 'index.html', {'tasks': tasks})
 
-
 def add_task(request):
     if request.method == 'POST':
         description = request.POST.get('description')
@@ -34,8 +33,6 @@ def add_task(request):
         return redirect('task_list')
 
     return render(request, 'add_task.html')
-
-
 
 def delete_task(request, task_id):
     try:

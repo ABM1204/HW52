@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73f6f2fd-8689-43ba-8f0d-0835b50f4ebd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/source/static/css/styles.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/source/to_do_list/migrations/0002_task_details_alter_task_description_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/to_do_list/templates/base.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/source/to_do_list/templates/task_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/HW52/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/HW52/urls.py" afterDir="false" />
@@ -13,6 +15,7 @@
       <change beforePath="$PROJECT_DIR$/source/to_do_list/fixtures/tasks.json" beforeDir="false" afterPath="$PROJECT_DIR$/source/to_do_list/fixtures/tasks.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/to_do_list/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/to_do_list/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/to_do_list/templates/add_task.html" beforeDir="false" afterPath="$PROJECT_DIR$/source/to_do_list/templates/add_task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/to_do_list/templates/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/source/to_do_list/templates/delete.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/to_do_list/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/source/to_do_list/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/to_do_list/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/to_do_list/views.py" afterDir="false" />
     </list>
@@ -24,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -54,7 +57,7 @@
     "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/User/Desktop/Python 19/HW52/source/HW52/settings.py",
+    "last_opened_file_path": "C:/Users/User/Desktop/Python 19/HW53",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -110,7 +113,10 @@
       <option name="presentableId" value="Default" />
       <updated>1719228423299</updated>
       <workItem from="1719228424453" duration="5473000" />
-      <workItem from="1719421158795" duration="1796000" />
+      <workItem from="1719421158795" duration="4601000" />
+      <workItem from="1719425813267" duration="2481000" />
+      <workItem from="1719762640080" duration="16000" />
+      <workItem from="1719816026843" duration="950000" />
     </task>
     <servers />
   </component>

@@ -1,34 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Add Task</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-    <div class="container">
-        <h1>Add Task</h1>
-        <form method="post">
-            {% csrf_token %}
-            <label for="id_description" class="form-label">Description:</label>
-            <input type="text" class="form-control" id="id_description" name="description" required>
-            
-            <label for="id_details" class="form-label">Details:</label>
-            <textarea class="form-control" id="id_details" name="details"></textarea>
-            
-            <label for="id_status" class="form-label">Status:</label>
-            <select id="id_status" name="status" class="form-control">
-                <option value="new">New</option>
-                <option value="in_progress">In process</option>
-                <option value="done">Done</option>
-            </select>
-            
-            <label for="id_due_date" class="form-label">Date (YYYY-MM-DD):</label>
-            <input type="text" class="form-control" id="id_due_date" name="due_date">
-            
-            <button type="submit" class="button">Add</button>
-        </form>
-    </div>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %}Add Task{% endblock %}
+
+{% block content %}
+<h1>Add Task</h1>
+<form method="post">
+    {% csrf_token %}
+    <label for="id_description" class="form-label">Description:</label>
+    <input type="text" class="form-control" id="id_description" name="description" required>
+    
+    <label for="id_details" class="form-label">Details:</label>
+    <textarea class="form-control" id="id_details" name="details"></textarea>
+    
+    <label for="id_status" class="form-label">Status:</label>
+    <select id="id_status" name="status" class="form-control">
+        <option value="new">New</option>
+        <option value="in_progress">In process</option>
+        <option value="done">Done</option>
+    </select>
+    
+    <label for="id_due_date" class="form-label">Date (YYYY-MM-DD):</label>
+    <input type="text" class="form-control" id="id_due_date" name="due_date">
+    
+    <button type="submit" class="button">Add</button>
+</form>
+{% endblock %}
