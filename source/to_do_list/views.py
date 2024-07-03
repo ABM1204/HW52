@@ -49,3 +49,26 @@ def delete_task(request, task_id):
 def task_detail(request, task_id):
     task = get_object_or_404(Task, pk=task_id)
     return render(request, 'task_detail.html', {'task': task})
+
+def edit_task(request, task_id):
+    task = get_object_or_404(Task, pk=task_id)
+
+    if request.method == 'POST':
+        task.description = request.POST.get('description')
+        task.details = request.POST.get('details')
+        task.status = request.POST.get('status')
+        task.due_date = request.POST.get('due_date')
+
+        from datetime import datetime
+        if task.due_date:
+            try:
+                task.due_date = datetime.strptime(task.due_date, '%Y-%m-%d').date()
+                if task.due_date < datetime.today().date():
+                    return HttpResponseBadRequest('<h1>ERROR: Due date cannot be in the past</h1>')
+            except ValueError:
+                return HttpResponseBadRequest('<h1>ERROR: Invalid date format</h1>')
+
+        task.save()
+        return redirect('task_list')
+
+    return render(request, 'edit_task.html', {'task': task})

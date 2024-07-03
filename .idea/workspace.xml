@@ -5,17 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73f6f2fd-8689-43ba-8f0d-0835b50f4ebd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/source/static/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/to_do_list/migrations/0002_task_details_alter_task_description_and_more.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/to_do_list/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/to_do_list/templates/task_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/to_do_list/templates/edit_task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/to_do_list/templates/task_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/HW52.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/HW52.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/HW52/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/HW52/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/HW52/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/HW52/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/source/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/to_do_list/fixtures/tasks.json" beforeDir="false" afterPath="$PROJECT_DIR$/source/to_do_list/fixtures/tasks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/to_do_list/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/to_do_list/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/to_do_list/templates/add_task.html" beforeDir="false" afterPath="$PROJECT_DIR$/source/to_do_list/templates/add_task.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/to_do_list/templates/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/source/to_do_list/templates/delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/to_do_list/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/source/to_do_list/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/to_do_list/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/source/to_do_list/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/to_do_list/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/to_do_list/views.py" afterDir="false" />
     </list>
@@ -27,13 +25,60 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/homework_53" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="homework_53" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="homework_55" />
+                    <option name="lastUsedInstant" value="1720023861" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="homework_53" />
+                    <option name="lastUsedInstant" value="1720023597" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1720023596" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -55,7 +100,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
     "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "homework__55",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/User/Desktop/Python 19/HW53",
     "list.type.of.created.stylesheet": "CSS",
@@ -79,7 +124,7 @@
         <env name="DJANGO_SETTINGS_MODULE" value="HW52.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.12 (HW52)" />
+      <option name="SDK_NAME" value="Python 3.12 (HW54)" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
