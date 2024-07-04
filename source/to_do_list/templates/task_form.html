@@ -1,20 +1,24 @@
-<form method="post">
+<form method="post" class="mt-4">
     {% csrf_token %}
-    <label for="id_description" class="form-label">Description:</label>
-    <input type="text" class="form-control" id="id_description" name="description" value="{{ form.description.value|default_if_none:'' }}" required>
+    <div class="form-group">
+        <label for="{{ form.description.id_for_label }}" class="form-label">Description:</label>
+        {{ form.description }}
+    </div>
     
-    <label for="id_details" class="form-label">Details:</label>
-    <textarea class="form-control" id="id_details" name="details">{{ form.details.value|default_if_none:'' }}</textarea>
+    <div class="form-group">
+        <label for="{{ form.details.id_for_label }}" class="form-label">Details:</label>
+        {{ form.details }}
+    </div>
     
-    <label for="id_status" class="form-label">Status:</label>
-    <select id="id_status" name="status" class="form-control">
-        <option value="new" {% if form.status.value == 'new' %}selected{% endif %}>New</option>
-        <option value="in_progress" {% if form.status.value == 'in_progress' %}selected{% endif %}>In process</option>
-        <option value="done" {% if form.status.value == 'done' %}selected{% endif %}>Done</option>
-    </select>
+    <div class="form-group">
+        <label for="{{ form.status.id_for_label }}" class="form-label">Status:</label>
+        {{ form.status }}
+    </div>
     
-    <label for="id_due_date" class="form-label">Date (YYYY-MM-DD):</label>
-    <input type="text" class="form-control" id="id_due_date" name="due_date" value="{{ form.due_date.value|default_if_none:'' }}">
+    <div class="form-group">
+        <label for="{{ form.due_date.id_for_label }}" class="form-label">Date (YYYY-MM-DD):</label>
+        {{ form.due_date }}
+    </div>
     
-    <button type="submit" class="button">Save</button>
+    <button type="submit" class="btn btn-primary">Save</button>
 </form>
